@@ -1,5 +1,6 @@
 import openai
 from dotenv import load_dotenv
+import os
 
 def GPT(prompt):
   openai.api_key = API_KEY
@@ -33,4 +34,4 @@ while True:
   file.writelines(f"<nav><img src='AI.png'><h1>{AI_Name}</h1><p>{response}</p></nav>\n")
   file.close()
 
-API_KEY = "token"
+API_KEY = os.getenv("APIKEY")
