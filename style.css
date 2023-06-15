@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #36393f;
+}
+nav {
+    margin: 20px;
+    display: flex;
+}
+nav h1 {
+    color: rgb(221, 221, 221);
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: -5px;
+    position: absolute;
+    left: 75px;
+}
+nav p {
+    position: absolute;
+    color: rgb(165, 165, 165);
+    left: 75px;
+}
+nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
