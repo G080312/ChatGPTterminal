@@ -1,4 +1,5 @@
 import openai
+from dotenv import load_dotenv
 
 def GPT(prompt):
   openai.api_key = API_KEY
@@ -14,6 +15,7 @@ def GPT(prompt):
   response.choices[0].text.split('.')
   return response.choices[0].text
 
+load_dotenv(".env")
 You_Name = input("What is your name? ")
 AI_Name = input("Decide on a name for your AI. ")
 print(f"My name is {AI_Name} ")
